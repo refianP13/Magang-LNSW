@@ -32,7 +32,7 @@ const deleteProduct = (productId) => {
         <Routes>
           <Route exact path="/" element={<ProductList products={products} deleteProduct={deleteProduct}/>} />
           <Route exact path="/add" element={<AddProduct />} />
-          <Route path="/edit/:productId" element={<EditProduct />} />
+          <Route path="/edit/:id" element={<EditProduct />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
